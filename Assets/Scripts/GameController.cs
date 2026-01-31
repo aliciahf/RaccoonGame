@@ -1,5 +1,7 @@
+using System;
 using System.Collections.Generic;
 using TMPro;
+using UnityEditor.IMGUI.Controls;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -7,15 +9,18 @@ public class GameController : MonoBehaviour
 {
     [Header("Initial Meter Value")]
     [Range(-10, 10)]
-    public float initialMeterValue = 0f;
+    public int initialMeterValue = -10;
 
-    private float currentMeterValue;
+    private int currentMeterValue;
 
-    public const float VERY_RACCOON = -10f;
-    public const float LITTLE_RACCOON = -5f;
-    public const float WHAT_ARE_YOU = 0f;
-    public const float HUMANISH = 5f;
-    public const float VERY_HUMAN = 10f;
+    public const int VERY_RACCOON = -10;
+    public const int LITTLE_RACCOON = -5;
+    public const int WHAT_ARE_YOU = 0;
+    public const int HUMANISH = 5;
+    public const int VERY_HUMAN = 10;
+
+    private const float X_AT_RACCOON = -380f; 
+    private const float X_AT_HUMAN = 440f;
 
     [Header("Max Tiers")]
     [Range(1, 5)]
@@ -35,6 +40,7 @@ public class GameController : MonoBehaviour
     private PickupItems currentItem;
 
     private RectTransform meterMarker;
+    private RectTransform meterTrack;
 
     private readonly List<DialogueLine> dialogueLines = new();
     private int dialogueIndex = -1;
@@ -67,7 +73,8 @@ public class GameController : MonoBehaviour
 
         selectedItemImage = FindCanvasChild("SelectedItem")?.GetComponent<Image>();
 
-        meterMarker = FindCanvasChild("MeterTrack")?.GetComponent<RectTransform>();
+        meterMarker = FindCanvasChild("MeterMarker")?.GetComponent<RectTransform>();
+        meterTrack = FindCanvasChild("MeterTrack")?.GetComponent<RectTransform>();
 
         if (dialoguePanel == null) Debug.LogWarning("No dialogue panel");
         if (selectedItemImage == null) Debug.LogWarning("No selected item");
@@ -78,27 +85,33 @@ public class GameController : MonoBehaviour
     private void Start()
     {
         currentMeterValue = initialMeterValue;
+        selectedItemImage.enabled = false;
         if(dialoguePanel != null) dialoguePanel.SetActive(false);
+        UpdateMeterUI();
     }
 
     void Update()
     {
         if(dialogueActive && Input.GetMouseButtonDown(0))
         {
-
+            AdvanceDialogue();
         }
     }
 
     public float GetCurrentMeterValue() => currentMeterValue;
 
-    public void SetMeterValue(float value)
+    public void SetMeterValue(int value)
     {
-        currentMeterValue = Mathf.Clamp(value, VERY_RACCOON, VERY_HUMAN);
+        currentMeterValue = value;
+        if (currentMeterValue > VERY_HUMAN) currentMeterValue = VERY_HUMAN;
+        if (currentMeterValue < VERY_RACCOON) currentMeterValue = VERY_RACCOON;
+
     }
 
-    public void AddToMeterValue(float add)
+    public void AddToMeterValue(int add)
     {
         SetMeterValue(currentMeterValue + add);
+        UpdateMeterUI();
     }
 
     public MeterRank GetCurrentRank()
@@ -120,15 +133,17 @@ public class GameController : MonoBehaviour
         currentItem = item;
         selectedItemImage.sprite = item.GetIcon();
         AddToMeterValue(item.Value);
+        selectedItemImage.enabled = true;
     }
 
     public void DropItem()
     {
+        if(currentItem == null) return;
         AddToMeterValue(currentItem.Value * -1);
         currentItem.Reset();
         currentItem = null;
         selectedItemImage.sprite = null;
-        Debug.Log(currentMeterValue);
+        selectedItemImage.enabled = false;
     }
 
     public int GetTier() => currentTier;
@@ -140,4 +155,70 @@ public class GameController : MonoBehaviour
 
     public bool IsDialogueActive() => dialogueActive;
 
+    private void UpdateMeterUI()
+    {
+        if (meterTrack == null || meterMarker == null) return;
+        Debug.Log(currentMeterValue);
+        float v = Mathf.Clamp(currentMeterValue, VERY_RACCOON, VERY_HUMAN);
+
+        float t = (v - VERY_RACCOON) / (VERY_HUMAN - VERY_RACCOON);
+
+        float x = Mathf.Lerp(X_AT_RACCOON, X_AT_HUMAN, t);
+
+        var pos = meterMarker.anchoredPosition;
+        pos.x = x;
+        meterMarker.anchoredPosition = pos;
+    }
+
+    public void ShowText(string text, string speakerName = "", Sprite portrait = null)
+    {
+        var lines = new List<DialogueLine>
+        {
+            new DialogueLine { text = text, speakerName = speakerName, portrait = portrait }
+        };
+        StartDialogue(lines);
+    }
+
+    public void StartDialogue(List<DialogueLine> lines)
+    {
+        dialogueLines.Clear();
+        dialogueLines.AddRange(lines);
+        dialogueIndex = -1;
+        dialogueActive = true;
+        if (dialoguePanel != null) dialoguePanel.SetActive(true);
+        AdvanceDialogue();
+    }
+
+    private void AdvanceDialogue()
+    {
+        dialogueIndex++;
+
+        if (dialogueIndex >= dialogueLines.Count)
+        {
+            dialogueActive = false;
+            if (dialoguePanel != null) dialoguePanel.SetActive(false);
+            return;
+        }
+
+        var line = dialogueLines[dialogueIndex];
+
+        if (dialogueText != null) dialogueText.text = line.text ?? "";
+
+        if (dialogueName != null)
+            dialogueName.text = string.IsNullOrEmpty(line.speakerName) ? "" : line.speakerName;
+
+        if (dialoguePortrait != null)
+        {
+            if (line.portrait != null)
+            {
+                dialoguePortrait.sprite = line.portrait;
+                dialoguePortrait.enabled = true;
+            }
+            else
+            {
+                dialoguePortrait.sprite = null;
+                dialoguePortrait.enabled = false;
+            }
+        }
+    }
 }

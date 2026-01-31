@@ -5,7 +5,7 @@ public class PickupItems : MonoBehaviour
     public string Name;
 
     [Range(GameController.VERY_RACCOON, GameController.VERY_HUMAN)]
-    public float Value;
+    public int Value;
 
     private Sprite sprite;
     private GameController controller;
