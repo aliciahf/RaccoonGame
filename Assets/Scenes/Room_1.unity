@@ -161,7 +161,7 @@ MonoBehaviour:
   initialSpeaker: {fileID: 0}
   fadeGroup: {fileID: 1732486049}
   fadeDuration: 1
-  nextLevel: Room_2_LivingRoom
+  nextLevel: Room_2
 --- !u!4 &109631290
 Transform:
   m_ObjectHideFlags: 0
