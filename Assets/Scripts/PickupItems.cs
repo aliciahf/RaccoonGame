@@ -26,7 +26,7 @@ public class PickupItems : MonoBehaviour
 
     public Sprite GetIcon() => sprite;
 
-    void OnMouseDown()
+    public virtual void OnMouseDown()
     {
         if (controller.IsDialogueActive()) return;
 
@@ -35,11 +35,11 @@ public class PickupItems : MonoBehaviour
         gameObject.SetActive(false);
         foreach (PickupItems pickup in connectedItems)
         {
-            pickup.gameObject.SetActive(true);
+            if (pickup != null) pickup.gameObject.SetActive(true);
         }
     }
 
-    public void Reset()
+    public virtual void Reset()
     {
         gameObject.SetActive(true);
     }

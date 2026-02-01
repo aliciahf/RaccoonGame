@@ -20,7 +20,7 @@ public class GameController : MonoBehaviour
     public const int HUMANISH = 5;
     public const int VERY_HUMAN = 10;
 
-    private const float X_AT_RACCOON = -380f; 
+    private const float X_AT_RACCOON = -380f;
     private const float X_AT_HUMAN = 440f;
 
     [Header("Max Tiers")]
@@ -54,10 +54,9 @@ public class GameController : MonoBehaviour
 
     private PickupItems[] allPickups;
 
-
     Transform FindCanvasChild(string name)
     {
-        foreach(var trans in canvas.GetComponentsInChildren<Transform>(true))
+        foreach (var trans in canvas.GetComponentsInChildren<Transform>(true))
         {
             if (trans.name == name) return trans;
         }
@@ -69,7 +68,7 @@ public class GameController : MonoBehaviour
         if (canvas == null)
             canvas = FindFirstObjectByType<Canvas>();
 
-        if(canvas == null)
+        if (canvas == null)
         {
             Debug.LogError("No canvas found in scene");
             return;
@@ -95,7 +94,7 @@ public class GameController : MonoBehaviour
     {
         currentMeterValue = initialMeterValue;
         selectedItemImage.enabled = false;
-        if(dialoguePanel != null) dialoguePanel.SetActive(false);
+        if (dialoguePanel != null) dialoguePanel.SetActive(false);
         UpdateMeterUI();
         foreach (PickupItems pickup in allPickups)
         {
@@ -150,7 +149,7 @@ public class GameController : MonoBehaviour
 
     public void PickUpItem(PickupItems item)
     {
-        if (currentItem != null) DropItem();
+        if (currentItem != null && item is not CombinableItem) DropItem();
         currentItem = item;
         selectedItemImage.sprite = item.GetIcon();
         AddToMeterValue(item.Value);
@@ -159,8 +158,16 @@ public class GameController : MonoBehaviour
 
     public void DropItem()
     {
-        if(currentItem == null) return;
+        if (currentItem == null) return;
         AddToMeterValue(currentItem.Value * -1);
+        if (currentItem is CombinableItem)
+        {
+            var combinable = (CombinableItem)currentItem;
+            foreach (PickupItems comb in combinable.combinors)
+            {
+                AddToMeterValue(comb.Value * -1);
+            }
+        }
         currentItem.Reset();
         currentItem = null;
         selectedItemImage.sprite = null;
@@ -196,7 +203,7 @@ public class GameController : MonoBehaviour
 
     public void StartDialogue(List<string> lines, string speakerName, Sprite portrait)
     {
-        if(lines.Count == 0) return;
+        if (lines.Count == 0) return;
 
         activeDialogue = lines;
         activeSpeakerName = speakerName;
@@ -219,7 +226,7 @@ public class GameController : MonoBehaviour
             return;
         }
 
-        if (dialogueText != null) 
+        if (dialogueText != null)
             dialogueText.text = activeDialogue[dialogueIndex];
 
         if (dialogueName != null)
