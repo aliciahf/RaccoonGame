@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 7103625938860657151}
   - component: {fileID: 7122520248834481829}
   - component: {fileID: 3612445135224768959}
+  - component: {fileID: -6797223746760048157}
   m_Layer: 0
   m_Name: PickupItem
   m_TagString: Item
@@ -153,4 +154,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::PickupItems
   ItemName: 
   Value: 0
-  showOnTier: 1
+  connectedItems: []
+  relyOnConnectedItem: 0
+--- !u!114 &-6797223746760048157
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8616655952485964171}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 930b47aecbd03694da69e840232f7e1e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::HoverAnimation
