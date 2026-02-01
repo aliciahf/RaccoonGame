@@ -1,0 +1,871 @@
+fileFormatVersion: 2
+guid: 943a0768263594d73971ac237e69d5c8
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -8326736429765110110
+    second: LIFE OF The party status reached!_0
+  - first:
+      213: -1358396500070105075
+    second: LIFE OF The party status reached!_1
+  - first:
+      213: 3252671719448902886
+    second: LIFE OF The party status reached!_2
+  - first:
+      213: -4356355072422193709
+    second: LIFE OF The party status reached!_3
+  - first:
+      213: -7052417880461852872
+    second: LIFE OF The party status reached!_4
+  - first:
+      213: -2987860475278263885
+    second: LIFE OF The party status reached!_5
+  - first:
+      213: -7306206315411257450
+    second: LIFE OF The party status reached!_6
+  - first:
+      213: 1424190880897233170
+    second: LIFE OF The party status reached!_7
+  - first:
+      213: 7843563583104563798
+    second: LIFE OF The party status reached!_8
+  - first:
+      213: -565153418691066645
+    second: LIFE OF The party status reached!_9
+  - first:
+      213: 897539089651813834
+    second: LIFE OF The party status reached!_10
+  - first:
+      213: -4303010793888992340
+    second: LIFE OF The party status reached!_11
+  - first:
+      213: -8991478460360009026
+    second: LIFE OF The party status reached!_12
+  - first:
+      213: 4117874764464445503
+    second: LIFE OF The party status reached!_13
+  - first:
+      213: 1803689249475789907
+    second: LIFE OF The party status reached!_14
+  - first:
+      213: 8573530228448852859
+    second: LIFE OF The party status reached!_15
+  - first:
+      213: 6910132499867137070
+    second: LIFE OF The party status reached!_16
+  - first:
+      213: 1438660987180210308
+    second: LIFE OF The party status reached!_17
+  - first:
+      213: 2938459762992092915
+    second: LIFE OF The party status reached!_18
+  - first:
+      213: -9077244290524612735
+    second: LIFE OF The party status reached!_19
+  - first:
+      213: 300311702504567220
+    second: LIFE OF The party status reached!_20
+  - first:
+      213: -2515230695898249023
+    second: LIFE OF The party status reached!_21
+  - first:
+      213: 4699794366703031615
+    second: LIFE OF The party status reached!_22
+  - first:
+      213: -2322787847134325072
+    second: LIFE OF The party status reached!_23
+  - first:
+      213: 3266230952181152210
+    second: LIFE OF The party status reached!_24
+  - first:
+      213: -3376932700412995388
+    second: LIFE OF The party status reached!_25
+  - first:
+      213: -2701035860120995932
+    second: LIFE OF The party status reached!_26
+  - first:
+      213: -8205818950475601116
+    second: LIFE OF The party status reached!_27
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: LIFE OF The party status reached!_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1
+        width: 125
+        height: 154
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2a6db85855d717c80800000000000000
+      internalID: -8326736429765110110
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LIFE OF The party status reached!_1
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 1
+        width: 110
+        height: 154
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d00003d8491062de0800000000000000
+      internalID: -1358396500070105075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LIFE OF The party status reached!_2
+      rect:
+        serializedVersion: 2
+        x: 248
+        y: 1
+        width: 115
+        height: 154
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ecf5b802bfc32d20800000000000000
+      internalID: 3252671719448902886
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LIFE OF The party status reached!_3
+      rect:
+        serializedVersion: 2
+        x: 367
+        y: 1
+        width: 118
+        height: 154
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d5ddc0842e1b83c0800000000000000
+      internalID: -4356355072422193709
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LIFE OF The party status reached!_4
+      rect:
+        serializedVersion: 2
+        x: 534
+        y: 0
+        width: 134
+        height: 156
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 83f35739d47c02e90800000000000000
+      internalID: -7052417880461852872
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LIFE OF The party status reached!_5
+      rect:
+        serializedVersion: 2
+        x: 677
+        y: 1
+        width: 115
+        height: 154
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b9fb946abcf886d0800000000000000
+      internalID: -2987860475278263885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LIFE OF The party status reached!_6
+      rect:
+        serializedVersion: 2
+        x: 828
+        y: 1
+        width: 130
+        height: 154
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 697423ae0142b9a90800000000000000
+      internalID: -7306206315411257450
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LIFE OF The party status reached!_7
+      rect:
+        serializedVersion: 2
+        x: 961
+        y: 1
+        width: 134
+        height: 154
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 211fa3c7f0eb3c310800000000000000
+      internalID: 1424190880897233170
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LIFE OF The party status reached!_8
+      rect:
+        serializedVersion: 2
+        x: 1107
+        y: 1
+        width: 118
+        height: 154
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 65a3328958fe9dc60800000000000000
+      internalID: 7843563583104563798
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LIFE OF The party status reached!_9
+      rect:
+        serializedVersion: 2
+        x: 1276
+        y: 1
+        width: 126
+        height: 154
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: be44253c5fb2828f0800000000000000
+      internalID: -565153418691066645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LIFE OF The party status reached!_10
+      rect:
+        serializedVersion: 2
+        x: 1402
+        y: 1
+        width: 134
+        height: 154
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: acd49b2fb03b47c00800000000000000
+      internalID: 897539089651813834
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LIFE OF The party status reached!_11
+      rect:
+        serializedVersion: 2
+        x: 1545
+        y: 1
+        width: 136
+        height: 154
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ca333953b72a844c0800000000000000
+      internalID: -4303010793888992340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LIFE OF The party status reached!_12
+      rect:
+        serializedVersion: 2
+        x: 1674
+        y: 1
+        width: 130
+        height: 154
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eba5aacaaf9d73380800000000000000
+      internalID: -8991478460360009026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LIFE OF The party status reached!_13
+      rect:
+        serializedVersion: 2
+        x: 1803
+        y: 1
+        width: 133
+        height: 154
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f38d275e741a52930800000000000000
+      internalID: 4117874764464445503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LIFE OF The party status reached!_14
+      rect:
+        serializedVersion: 2
+        x: 1981
+        y: 1
+        width: 122
+        height: 154
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3540238e0ddf70910800000000000000
+      internalID: 1803689249475789907
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LIFE OF The party status reached!_15
+      rect:
+        serializedVersion: 2
+        x: 2100
+        y: 1
+        width: 130
+        height: 154
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b7b74c9715c4bf670800000000000000
+      internalID: 8573530228448852859
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LIFE OF The party status reached!_16
+      rect:
+        serializedVersion: 2
+        x: 2223
+        y: 1
+        width: 134
+        height: 154
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e24767da5e8b5ef50800000000000000
+      internalID: 6910132499867137070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LIFE OF The party status reached!_17
+      rect:
+        serializedVersion: 2
+        x: 2351
+        y: 1
+        width: 130
+        height: 154
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 488d615ab8627f310800000000000000
+      internalID: 1438660987180210308
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LIFE OF The party status reached!_18
+      rect:
+        serializedVersion: 2
+        x: 2483
+        y: 0
+        width: 134
+        height: 155
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f61ce7f59187c820800000000000000
+      internalID: 2938459762992092915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LIFE OF The party status reached!_19
+      rect:
+        serializedVersion: 2
+        x: 2624
+        y: 1
+        width: 122
+        height: 154
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 18776db3966270280800000000000000
+      internalID: -9077244290524612735
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LIFE OF The party status reached!_20
+      rect:
+        serializedVersion: 2
+        x: 2796
+        y: 1
+        width: 136
+        height: 154
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4b17dadf6ebea2400800000000000000
+      internalID: 300311702504567220
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LIFE OF The party status reached!_21
+      rect:
+        serializedVersion: 2
+        x: 2938
+        y: 1
+        width: 118
+        height: 154
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1c883d2220b181dd0800000000000000
+      internalID: -2515230695898249023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LIFE OF The party status reached!_22
+      rect:
+        serializedVersion: 2
+        x: 3061
+        y: 1
+        width: 134
+        height: 154
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f3557b07316093140800000000000000
+      internalID: 4699794366703031615
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LIFE OF The party status reached!_23
+      rect:
+        serializedVersion: 2
+        x: 3202
+        y: 1
+        width: 116
+        height: 154
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0b6d6fa72ccc3cfd0800000000000000
+      internalID: -2322787847134325072
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LIFE OF The party status reached!_24
+      rect:
+        serializedVersion: 2
+        x: 3325
+        y: 1
+        width: 134
+        height: 154
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d9b42beebbf35d20800000000000000
+      internalID: 3266230952181152210
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LIFE OF The party status reached!_25
+      rect:
+        serializedVersion: 2
+        x: 3470
+        y: 1
+        width: 118
+        height: 154
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4c89b79c999b221d0800000000000000
+      internalID: -3376932700412995388
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LIFE OF The party status reached!_26
+      rect:
+        serializedVersion: 2
+        x: 3596
+        y: 1
+        width: 134
+        height: 154
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4a775e7223ef38ad0800000000000000
+      internalID: -2701035860120995932
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LIFE OF The party status reached!_27
+      rect:
+        serializedVersion: 2
+        x: 3742
+        y: 1
+        width: 64
+        height: 154
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 42babbd04231f1e80800000000000000
+      internalID: -8205818950475601116
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      LIFE OF The party status reached!_0: -8326736429765110110
+      LIFE OF The party status reached!_1: -1358396500070105075
+      LIFE OF The party status reached!_10: 897539089651813834
+      LIFE OF The party status reached!_11: -4303010793888992340
+      LIFE OF The party status reached!_12: -8991478460360009026
+      LIFE OF The party status reached!_13: 4117874764464445503
+      LIFE OF The party status reached!_14: 1803689249475789907
+      LIFE OF The party status reached!_15: 8573530228448852859
+      LIFE OF The party status reached!_16: 6910132499867137070
+      LIFE OF The party status reached!_17: 1438660987180210308
+      LIFE OF The party status reached!_18: 2938459762992092915
+      LIFE OF The party status reached!_19: -9077244290524612735
+      LIFE OF The party status reached!_2: 3252671719448902886
+      LIFE OF The party status reached!_20: 300311702504567220
+      LIFE OF The party status reached!_21: -2515230695898249023
+      LIFE OF The party status reached!_22: 4699794366703031615
+      LIFE OF The party status reached!_23: -2322787847134325072
+      LIFE OF The party status reached!_24: 3266230952181152210
+      LIFE OF The party status reached!_25: -3376932700412995388
+      LIFE OF The party status reached!_26: -2701035860120995932
+      LIFE OF The party status reached!_27: -8205818950475601116
+      LIFE OF The party status reached!_3: -4356355072422193709
+      LIFE OF The party status reached!_4: -7052417880461852872
+      LIFE OF The party status reached!_5: -2987860475278263885
+      LIFE OF The party status reached!_6: -7306206315411257450
+      LIFE OF The party status reached!_7: 1424190880897233170
+      LIFE OF The party status reached!_8: 7843563583104563798
+      LIFE OF The party status reached!_9: -565153418691066645
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
