@@ -99,7 +99,6 @@ public class GameController : MonoBehaviour
         UpdateMeterUI();
         foreach (PickupItems pickup in allPickups)
         {
-            Debug.Log(pickup.showOnTier);
             if (pickup.showOnTier > currentTier) pickup.gameObject.SetActive(false);
         }
     }
