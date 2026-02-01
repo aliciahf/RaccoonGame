@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: ba1682bbd5682b04e8e44034e4853696
+guid: bbbcf1b34565d7942a6c9d1997484044
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 3122752214640309974
-    second: books-stacked_0
+      213: -332233981676622189
+    second: Remote_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: books-stacked_0
+      name: Remote_0
       rect:
         serializedVersion: 2
-        x: 60
-        y: 47
-        width: 230
-        height: 256
+        x: 0
+        y: 0
+        width: 264
+        height: 269
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 6d6333b189e365b20800000000000000
-      internalID: 3122752214640309974
+      spriteID: 39ee9d334faa36bf0800000000000000
+      internalID: -332233981676622189
       vertices: []
       indices: 
       edges: []
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      books-stacked_0: 3122752214640309974
+      Remote_0: -332233981676622189
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

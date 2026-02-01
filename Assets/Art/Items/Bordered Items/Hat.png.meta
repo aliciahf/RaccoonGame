@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 2ee89bf8bb56adc44b55542154d9c9b5
+guid: 3d1a15aa0e4a589429335fa5da1c59e2
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 263779211930578635
-    second: pngimg.com - bed_PNG17402_0
+      213: -1836120431684336037
+    second: Hat_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: pngimg.com - bed_PNG17402_0
+      name: Hat_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 1462
-        height: 1082
+        width: 590
+        height: 352
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: bce2142bbc129a300800000000000000
-      internalID: 263779211930578635
+      spriteID: b564e90123ac486e0800000000000000
+      internalID: -1836120431684336037
       vertices: []
       indices: 
       edges: []
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      pngimg.com - bed_PNG17402_0: 263779211930578635
+      Hat_0: -1836120431684336037
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

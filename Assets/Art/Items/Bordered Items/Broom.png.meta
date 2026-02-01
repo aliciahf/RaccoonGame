@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: ef5c8feb97805014283815e5daaa7ceb
+guid: c6c3c8d4dd9b1fa4d8ca1c00e5fa137f
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 3482445392324918488
-    second: pngimg.com - coat_PNG33_0
+      213: 8301961774509548615
+    second: Broom_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: pngimg.com - coat_PNG33_0
+      name: Broom_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 532
-        height: 800
+        width: 237
+        height: 716
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 8dcf83f22a1245030800000000000000
-      internalID: 3482445392324918488
+      spriteID: 744638c8f3e763370800000000000000
+      internalID: 8301961774509548615
       vertices: []
       indices: 
       edges: []
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      pngimg.com - coat_PNG33_0: 3482445392324918488
+      Broom_0: 8301961774509548615
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

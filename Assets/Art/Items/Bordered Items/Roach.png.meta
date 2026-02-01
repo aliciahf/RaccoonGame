@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 98e457d5a70ec1849a504df88f6a7a52
+guid: 23de6cd4543c3ee44ad8c7a202dc46aa
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -4569177139676331608
-    second: coat-rack_0
+      213: 2547104715912636567
+    second: Roach_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: coat-rack_0
+      name: Roach_0
       rect:
         serializedVersion: 2
-        x: 130
-        y: 19
-        width: 99
-        height: 319
+        x: 0
+        y: 0
+        width: 788
+        height: 700
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 8a1c1c999950790c0800000000000000
-      internalID: -4569177139676331608
+      spriteID: 798e1b57e32295320800000000000000
+      internalID: 2547104715912636567
       vertices: []
       indices: 
       edges: []
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      coat-rack_0: -4569177139676331608
+      Roach_0: 2547104715912636567
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

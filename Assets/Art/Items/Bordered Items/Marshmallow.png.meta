@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 1ab47e8469a2ee24ea1502a0d02a5886
+guid: 74818a888e939574499c431fab75c692
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 3513275129330813665
-    second: pngimg.com - broom_PNG50_0
+      213: -2632934944105909514
+    second: Marshmallow_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: pngimg.com - broom_PNG50_0
+      name: Marshmallow_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 244
-        height: 514
+        width: 389
+        height: 414
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 1ea4af1bd19a1c030800000000000000
-      internalID: 3513275129330813665
+      spriteID: 6f2bad34e9fe57bd0800000000000000
+      internalID: -2632934944105909514
       vertices: []
       indices: 
       edges: []
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      pngimg.com - broom_PNG50_0: 3513275129330813665
+      Marshmallow_0: -2632934944105909514
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
