@@ -156,6 +156,8 @@ MonoBehaviour:
   Value: 0
   connectedItems: []
   relyOnConnectedItem: 0
+  isConsumable: 0
+  newIcon: {fileID: 0}
 --- !u!114 &-6797223746760048157
 MonoBehaviour:
   m_ObjectHideFlags: 0
