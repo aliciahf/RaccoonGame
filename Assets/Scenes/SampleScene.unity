@@ -1462,6 +1462,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Raccoony
       objectReference: {fileID: 0}
+    - target: {fileID: 8939506760578258593, guid: 9d28a8608d36dd54c9bc2bfd8607a3fd, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 8839837518695447893, guid: 9fa7f183d7329f6428e65ff30ad2044d, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
