@@ -612,7 +612,7 @@ PrefabInstance:
     - target: {fileID: 5493908739376127585, guid: 5fd8e0b357b19ba40b36eb9cb48d01e7, type: 3}
       propertyPath: Portrait
       value: 
-      objectReference: {fileID: -420017970089433170, guid: 362c6bf2e16b2d341af8646a8bcd1076, type: 3}
+      objectReference: {fileID: -6734211210704360013, guid: 7f715cb2c4be1a748a1284e38f24ba58, type: 3}
     - target: {fileID: 5493908739376127585, guid: 5fd8e0b357b19ba40b36eb9cb48d01e7, type: 3}
       propertyPath: charName
       value: Raccoony
@@ -1634,7 +1634,7 @@ PrefabInstance:
     - target: {fileID: 5493908739376127585, guid: 5fd8e0b357b19ba40b36eb9cb48d01e7, type: 3}
       propertyPath: Portrait
       value: 
-      objectReference: {fileID: -420017970089433170, guid: 362c6bf2e16b2d341af8646a8bcd1076, type: 3}
+      objectReference: {fileID: -6734211210704360013, guid: 7f715cb2c4be1a748a1284e38f24ba58, type: 3}
     - target: {fileID: 5493908739376127585, guid: 5fd8e0b357b19ba40b36eb9cb48d01e7, type: 3}
       propertyPath: charName
       value: Raccoony
@@ -3448,7 +3448,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Character
   charName: Raccoony
-  Portrait: {fileID: -420017970089433170, guid: 362c6bf2e16b2d341af8646a8bcd1076, type: 3}
+  Portrait: {fileID: -6734211210704360013, guid: 7f715cb2c4be1a748a1284e38f24ba58, type: 3}
   interactions:
   - triggerType: 0
     triggerRank: 0
