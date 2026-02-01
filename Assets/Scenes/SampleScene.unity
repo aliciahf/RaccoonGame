@@ -147,6 +147,8 @@ MonoBehaviour:
   - {fileID: 2014429168}
   - {fileID: 1432129237}
   relyOnConnectedItem: 0
+  isConsumable: 1
+  newIcon: {fileID: 4417195931804175314, guid: c41c89162620ff74fb41c77cb0f33c2e, type: 3}
 --- !u!114 &73839311
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1005,13 +1007,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CombinableItem
   ItemName: 
-  Value: 0
+  Value: 2
   connectedItems: []
   relyOnConnectedItem: 1
+  isConsumable: 0
+  newIcon: {fileID: 0}
   combinors:
   - {fileID: 73839308}
   - {fileID: 2014429168}
-  branches: []
+  branches:
+  - {fileID: 0}
 --- !u!4 &842107999 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1043273852471044834, guid: 9d28a8608d36dd54c9bc2bfd8607a3fd, type: 3}
@@ -1724,6 +1729,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Raccoony
       objectReference: {fileID: 0}
+    - target: {fileID: 8674777253140435818, guid: 9d28a8608d36dd54c9bc2bfd8607a3fd, type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
     - target: {fileID: 8939506760578258593, guid: 9d28a8608d36dd54c9bc2bfd8607a3fd, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -1982,6 +1991,7 @@ Transform:
   - {fileID: 73839307}
   - {fileID: 420861900145126529}
   - {fileID: 2014429161}
+  - {fileID: 2141903367251697214}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1418106895
@@ -2154,6 +2164,8 @@ MonoBehaviour:
   Value: 2
   connectedItems: []
   relyOnConnectedItem: 1
+  isConsumable: 0
+  newIcon: {fileID: 0}
   combinors:
   - {fileID: 73839308}
   branches:
@@ -2250,14 +2262,18 @@ MonoBehaviour:
     meterValue: 7
     advanceTier: 0
     endLevel: 0
+    newIcon: {fileID: 4417195931804175314, guid: c41c89162620ff74fb41c77cb0f33c2e, type: 3}
+    destroyCharacter: 0
   - triggerType: 0
-    triggerRank: 1
+    triggerRank: 0
     triggerItem: 
     dialogue:
     - I'm becoming more human!
     meterValue: 0
     advanceTier: 0
     endLevel: 0
+    newIcon: {fileID: 0}
+    destroyCharacter: 0
   - triggerType: 1
     triggerRank: 1
     triggerItem: Spoon
@@ -2266,6 +2282,8 @@ MonoBehaviour:
     meterValue: 0
     advanceTier: 1
     endLevel: 0
+    newIcon: {fileID: 0}
+    destroyCharacter: 0
 --- !u!1 &1774180752
 GameObject:
   m_ObjectHideFlags: 0
@@ -2496,6 +2514,8 @@ MonoBehaviour:
   connectedItems:
   - {fileID: 825961318}
   relyOnConnectedItem: 1
+  isConsumable: 0
+  newIcon: {fileID: 0}
   combinors:
   - {fileID: 73839308}
   branches:
@@ -2709,6 +2729,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 10007ca69c2f446f499dc0bf4ddd76f7, type: 3}
+--- !u!4 &2141903367251697214 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 931961114181013617, guid: 0b17ad2e9b16e904aa1c49638b875e01, type: 3}
+  m_PrefabInstance: {fileID: 6386967938213239295}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2892296074824785227
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2772,6 +2797,63 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 1432129237}
   m_SourcePrefab: {fileID: 100100000, guid: 710fda558b827404297dff5ebbfb528b, type: 3}
+--- !u!1001 &6386967938213239295
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1414451334}
+    m_Modifications:
+    - target: {fileID: 931961114181013617, guid: 0b17ad2e9b16e904aa1c49638b875e01, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 6.85
+      objectReference: {fileID: 0}
+    - target: {fileID: 931961114181013617, guid: 0b17ad2e9b16e904aa1c49638b875e01, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.96440005
+      objectReference: {fileID: 0}
+    - target: {fileID: 931961114181013617, guid: 0b17ad2e9b16e904aa1c49638b875e01, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 931961114181013617, guid: 0b17ad2e9b16e904aa1c49638b875e01, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 931961114181013617, guid: 0b17ad2e9b16e904aa1c49638b875e01, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 931961114181013617, guid: 0b17ad2e9b16e904aa1c49638b875e01, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 931961114181013617, guid: 0b17ad2e9b16e904aa1c49638b875e01, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 931961114181013617, guid: 0b17ad2e9b16e904aa1c49638b875e01, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 931961114181013617, guid: 0b17ad2e9b16e904aa1c49638b875e01, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 931961114181013617, guid: 0b17ad2e9b16e904aa1c49638b875e01, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8986501185854884531, guid: 0b17ad2e9b16e904aa1c49638b875e01, type: 3}
+      propertyPath: m_Name
+      value: CombinableItem
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0b17ad2e9b16e904aa1c49638b875e01, type: 3}
 --- !u!1001 &8511378877862229499
 PrefabInstance:
   m_ObjectHideFlags: 0

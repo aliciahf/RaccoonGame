@@ -24,4 +24,7 @@ public class Interaction
 
     public bool advanceTier = false;
     public bool endLevel = false;
+
+    public Sprite newIcon;
+    public bool destroyCharacter = false;
 }
