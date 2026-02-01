@@ -53,7 +53,7 @@ public class GameController : MonoBehaviour
     private bool blockAdvanceThisClick = false;
 
     private PickupItems[] allPickups;
-
+    private CombinableItem[] allCombinables;
 
     Transform FindCanvasChild(string name)
     {
@@ -89,6 +89,7 @@ public class GameController : MonoBehaviour
         if (selectedItemImage == null) Debug.LogWarning("No selected item");
         if (meterMarker == null) Debug.LogWarning("No Meter Marker");
         allPickups = FindObjectsByType<PickupItems>(FindObjectsSortMode.None);
+        allCombinables = FindObjectsByType<CombinableItem>(FindObjectsSortMode.None);
     }
 
     void Start()
@@ -150,7 +151,7 @@ public class GameController : MonoBehaviour
 
     public void PickUpItem(PickupItems item)
     {
-        if (currentItem != null) DropItem();
+        if (currentItem != null && item is not CombinableItem) DropItem();
         currentItem = item;
         selectedItemImage.sprite = item.GetIcon();
         AddToMeterValue(item.Value);
@@ -161,6 +162,14 @@ public class GameController : MonoBehaviour
     {
         if(currentItem == null) return;
         AddToMeterValue(currentItem.Value * -1);
+        if(currentItem is CombinableItem)
+        {
+            var combinable = (CombinableItem)currentItem;
+            foreach(PickupItems comb in  combinable.combinors)
+            {
+                AddToMeterValue(comb.Value * -1);
+            }
+        }
         currentItem.Reset();
         currentItem = null;
         selectedItemImage.sprite = null;
