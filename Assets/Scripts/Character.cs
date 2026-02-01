@@ -24,7 +24,6 @@ public class Character : MonoBehaviour
         Interaction chosenInteraction = HowToInteract();
         if (chosenInteraction == null)
         {
-            Debug.Log("Here!");
             controller.StartDialogue(new List<string> { "..." }, charName, Portrait);
             return;
         }
@@ -40,7 +39,7 @@ public class Character : MonoBehaviour
             {
                 if (inter == null) continue;
                 if (inter.triggerType != InteractionTriggerType.Item) continue;
-                if (!string.IsNullOrEmpty(inter.triggerItem))
+                if (!string.IsNullOrEmpty(inter.triggerItem) && inter.triggerItem == equippedItem.ItemName)
                 {
                     return inter;
                 }
