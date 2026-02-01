@@ -15,6 +15,9 @@ public class PickupItems : MonoBehaviour
 
     public bool relyOnConnectedItem = false;
 
+    public bool isConsumable = false;
+    public Sprite newIcon;
+
     private Sprite sprite;
     private GameController controller;
 
@@ -26,20 +29,33 @@ public class PickupItems : MonoBehaviour
 
     public Sprite GetIcon() => sprite;
 
-    void OnMouseDown()
+    public virtual void OnMouseDown()
     {
         if (controller.IsDialogueActive()) return;
 
-        controller.PickUpItem(this);
+        if (!isConsumable)
+        {
+            controller.PickUpItem(this);
+            foreach (PickupItems pickup in connectedItems)
+            {
+                if (pickup != null) pickup.gameObject.SetActive(true);
+            }
+        }
+        else
+        {
+            controller.AddToMeterValue(Value);
+            if (newIcon != null)
+            {
+                var playerChar = GameObject.FindWithTag("Player");
+                playerChar.GetComponent<SpriteRenderer>().sprite = newIcon;
+            }
+            
+        }
 
         gameObject.SetActive(false);
-        foreach (PickupItems pickup in connectedItems)
-        {
-            pickup.gameObject.SetActive(true);
-        }
     }
 
-    public void Reset()
+    public virtual void Reset()
     {
         gameObject.SetActive(true);
     }
