@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 2826500200545664547}
   - component: {fileID: 5295284472870771914}
   - component: {fileID: 5493908739376127585}
+  - component: {fileID: 5128575635870543438}
   m_Layer: 0
   m_Name: Character
   m_TagString: Untagged
@@ -182,3 +183,15 @@ MonoBehaviour:
   charName: 
   Portrait: {fileID: 0}
   interactions: []
+--- !u!114 &5128575635870543438
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3619530833764990668}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 803b43d31478a48789ec8fba8925197a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CursorInteractions
