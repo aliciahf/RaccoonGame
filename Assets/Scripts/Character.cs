@@ -87,7 +87,7 @@ public class Character : MonoBehaviour
 
         if (inter.endLevel)
         {
-            controller.StartDialogue(new List<string> { "You Win!" }, charName, Portrait);
+            controller.FadeOutAndEndLevel();
         }
 
     }
