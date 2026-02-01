@@ -1506,7 +1506,7 @@ MonoBehaviour:
   initialSpeaker: {fileID: 1297942950}
   fadeGroup: {fileID: 202877480}
   fadeDuration: 1
-  nextLevel: 
+  nextLevel: End
 --- !u!4 &660683981
 Transform:
   m_ObjectHideFlags: 0
