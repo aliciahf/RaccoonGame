@@ -229,7 +229,7 @@ public class GameController : MonoBehaviour
         switch (GetCurrentRank())
         {
             case MeterRank.VeryRaccoon:
-                meterText.text = "Very Raccoon";
+                meterText.text = "Very Raccoony";
                 break;
             case MeterRank.ALittleRaccoon:
                 meterText.text = "A Little Raccoon";
