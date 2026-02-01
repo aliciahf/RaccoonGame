@@ -42,6 +42,7 @@ public class GameController : MonoBehaviour
 
     private RectTransform meterMarker;
     private RectTransform meterTrack;
+    private TMP_Text meterText;
 
     private List<string> activeDialogue = new();
     private int dialogueIndex = -1;
