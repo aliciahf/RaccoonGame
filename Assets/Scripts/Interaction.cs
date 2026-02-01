@@ -24,4 +24,10 @@ public class Interaction
 
     public bool advanceTier = false;
     public bool endLevel = false;
+
+    public Sprite newIcon;
+    public Sprite newRaccoonIcon;
+    public bool destroyCharacter = false;
+
+    public List<GameObject> spawnItems;
 }

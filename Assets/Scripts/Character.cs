@@ -69,6 +69,21 @@ public class Character : MonoBehaviour
 
         controller.AddToMeterValue(inter.meterValue);
         if (inter.advanceTier) controller.SetTier(controller.GetTier() + 1);
+        if(inter.destroyCharacter) this.gameObject.SetActive(false);
+        if (inter.newIcon) this.GetComponent<SpriteRenderer>().sprite = inter.newIcon;
+
+        if (inter.spawnItems.Count > 0)
+        { foreach (var item in inter.spawnItems) 
+            { 
+                item.gameObject.SetActive(true);
+            } 
+        }
+
+        if (inter.newRaccoonIcon)
+        {
+            var playerChar = GameObject.FindWithTag("Player");
+            playerChar.GetComponent<SpriteRenderer>().sprite = inter.newRaccoonIcon;
+        }
 
         if (inter.endLevel)
         {
