@@ -1016,9 +1016,9 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
-  m_Resource: {fileID: 8300000, guid: fb834d12f99479045abcffd5dc90786a, type: 3}
+  m_Resource: {fileID: 8300000, guid: 00b5c46ae49e3a747ab1e5ea418bf126, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.105
+  m_Volume: 0.89
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -1120,6 +1120,31 @@ Transform:
 --- !u!1001 &641831322
 PrefabInstance:
   m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 660683979}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 99c79ace844d2044089028d8902e272b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GameController
+  initialMeterValue: 0
+  maxTiers: 3
+  canvas: {fileID: 969108837}
+  showInitialDialogue: 0
+  dialogue: []
+  initialSpeaker: {fileID: 0}
+  fadeGroup: {fileID: 0}
+  fadeDuration: 1
+  nextLevel: 
+--- !u!4 &660683981
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 660683979}
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
