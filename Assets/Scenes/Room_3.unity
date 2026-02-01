@@ -689,9 +689,9 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
-  m_Resource: {fileID: 8300000, guid: fb834d12f99479045abcffd5dc90786a, type: 3}
+  m_Resource: {fileID: 8300000, guid: 00b5c46ae49e3a747ab1e5ea418bf126, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.23
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -822,6 +822,12 @@ MonoBehaviour:
   initialMeterValue: 0
   maxTiers: 3
   canvas: {fileID: 969108837}
+  showInitialDialogue: 0
+  dialogue: []
+  initialSpeaker: {fileID: 0}
+  fadeGroup: {fileID: 0}
+  fadeDuration: 1
+  nextLevel: 
 --- !u!4 &660683981
 Transform:
   m_ObjectHideFlags: 0

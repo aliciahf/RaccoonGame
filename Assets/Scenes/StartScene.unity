@@ -226,7 +226,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
-  m_Resource: {fileID: 8300000, guid: 32744466b1dca95409c69adbb6d41f21, type: 3}
+  m_Resource: {fileID: 8300000, guid: 4e49923d2ac2dfb49bfe29685acc9dfa, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -1034,7 +1034,6 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: SampleScene
-          m_StringArgument: Room_1
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1280772337
