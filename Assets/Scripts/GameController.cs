@@ -1,9 +1,12 @@
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using TMPro;
+using UnityEditor;
 using UnityEditor.IMGUI.Controls;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class GameController : MonoBehaviour
@@ -55,6 +58,19 @@ public class GameController : MonoBehaviour
 
     private PickupItems[] allPickups;
 
+    [Header("Initial Dialogue")]
+    public bool showInitialDialogue = false;
+    public List<string> dialogue = new();
+    public Character initialSpeaker;
+
+    [Header("Fade")]
+    public CanvasGroup fadeGroup;
+    public float fadeDuration = 1.0f;
+
+    private bool pendingLevelEnd = false;
+
+    public string nextLevel;
+
     Transform FindCanvasChild(string name)
     {
         foreach (var trans in canvas.GetComponentsInChildren<Transform>(true))
@@ -84,6 +100,7 @@ public class GameController : MonoBehaviour
 
         meterMarker = FindCanvasChild("MeterMarker")?.GetComponent<RectTransform>();
         meterTrack = FindCanvasChild("MeterTrack")?.GetComponent<RectTransform>();
+        meterText = FindCanvasChild("CurrentRank")?.GetComponent<TMP_Text>();
 
         if (dialoguePanel == null) Debug.LogWarning("No dialogue panel");
         if (selectedItemImage == null) Debug.LogWarning("No selected item");
@@ -100,6 +117,10 @@ public class GameController : MonoBehaviour
         foreach (PickupItems pickup in allPickups)
         {
             if (pickup.relyOnConnectedItem) pickup.gameObject.SetActive(false);
+        }
+        if (showInitialDialogue)
+        {
+            StartDialogue(dialogue, initialSpeaker.charName, initialSpeaker.Portrait);
         }
     }
 
@@ -200,6 +221,29 @@ public class GameController : MonoBehaviour
         var pos = meterMarker.anchoredPosition;
         pos.x = x;
         meterMarker.anchoredPosition = pos;
+        changeMeterText();
+    }
+
+    public void changeMeterText()
+    {
+        switch (GetCurrentRank())
+        {
+            case MeterRank.VeryRaccoon:
+                meterText.text = "Very Raccoon";
+                break;
+            case MeterRank.ALittleRaccoon:
+                meterText.text = "A Little Raccoon";
+                break;
+            case MeterRank.WhatAreYou:
+                meterText.text = "??? What Are You ???";
+                break;
+            case MeterRank.Humanish:
+                meterText.text = "Human-ish";
+                break;
+            case MeterRank.VeryHuman:
+                meterText.text = "Very Human";
+                break;
+        }
     }
 
     public void StartDialogue(List<string> lines, string speakerName, Sprite portrait)
@@ -224,6 +268,8 @@ public class GameController : MonoBehaviour
         {
             dialogueActive = false;
             if (dialoguePanel != null) dialoguePanel.SetActive(false);
+            if (pendingLevelEnd)
+                StartCoroutine(FadeOutRoutine());
             return;
         }
 
@@ -238,5 +284,33 @@ public class GameController : MonoBehaviour
             dialoguePortrait.sprite = activeSpeakerPortrait;
             dialoguePortrait.enabled = true;
         }
+    }
+
+    public void FadeOutAndEndLevel()
+    {
+        pendingLevelEnd = true;
+        if (!IsDialogueActive())
+        {
+            StartCoroutine(FadeOutRoutine());
+        }
+    }
+
+    private IEnumerator FadeOutRoutine()
+    {
+        fadeGroup.blocksRaycasts = true;
+
+        float t = 0f;
+        float startAlpha = fadeGroup.alpha;
+
+        while (t < fadeDuration)
+        {
+            t += Time.deltaTime;
+            fadeGroup.alpha = Mathf.Lerp(startAlpha, 1f, t / fadeDuration);
+            yield return null;
+        }
+
+        fadeGroup.alpha = 1f;
+
+        SceneManager.LoadScene(nextLevel);
     }
 }
