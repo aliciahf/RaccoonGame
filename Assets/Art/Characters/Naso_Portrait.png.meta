@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 6f246e8a0bd4e08488eae21c1d4fa8c3
+guid: df44e3286de06734f9e9ca3c7c8936d7
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 8136587373205870048
-    second: Party_Host_Portrait_0
+      213: 2087537565873498123
+    second: Naso_Portrait_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,7 +100,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Party_Host_Portrait_0
+      name: Naso_Portrait_0
       rect:
         serializedVersion: 2
         x: 0
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 0e55ddf3b17fae070800000000000000
-      internalID: 8136587373205870048
+      spriteID: b086c2d1b5c68fc10800000000000000
+      internalID: 2087537565873498123
       vertices: []
       indices: 
       edges: []
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Party_Host_Portrait_0: 8136587373205870048
+      Naso_Portrait_0: 2087537565873498123
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

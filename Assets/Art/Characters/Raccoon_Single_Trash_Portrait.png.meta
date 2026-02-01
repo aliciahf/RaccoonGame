@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: d925fd9b5b12ef446952ec7114de6ee2
+guid: 716f3bbb1054a6e4e886e794db0ca647
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 6874340413721981883
-    second: Lesbian_Left_Portrait_0
+      213: -6340521029785660812
+    second: Raccoon_Single_Trash_Portrait_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,7 +100,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Lesbian_Left_Portrait_0
+      name: Raccoon_Single_Trash_Portrait_0
       rect:
         serializedVersion: 2
         x: 0
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: bb3b2093f20966f50800000000000000
-      internalID: 6874340413721981883
+      spriteID: 4725bb887b1f108a0800000000000000
+      internalID: -6340521029785660812
       vertices: []
       indices: 
       edges: []
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Lesbian_Left_Portrait_0: 6874340413721981883
+      Raccoon_Single_Trash_Portrait_0: -6340521029785660812
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
