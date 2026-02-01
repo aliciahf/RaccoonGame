@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using UnityEngine;
 
 public class PickupItems : MonoBehaviour
@@ -7,8 +8,12 @@ public class PickupItems : MonoBehaviour
     [Range(GameController.VERY_RACCOON, GameController.VERY_HUMAN)]
     public int Value;
 
-    [Range(1, 5)]
-    public int showOnTier = 1;
+    //[Range(1, 5)]
+    //public int showOnTier = 1;
+
+    public List<PickupItems> connectedItems;
+
+    public bool relyOnConnectedItem = false;
 
     private Sprite sprite;
     private GameController controller;
@@ -28,6 +33,10 @@ public class PickupItems : MonoBehaviour
         controller.PickUpItem(this);
 
         gameObject.SetActive(false);
+        foreach (PickupItems pickup in connectedItems)
+        {
+            pickup.gameObject.SetActive(true);
+        }
     }
 
     public void Reset()
