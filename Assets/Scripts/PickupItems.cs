@@ -21,6 +21,10 @@ public class PickupItems : MonoBehaviour
     private Sprite sprite;
     private GameController controller;
 
+    [Header("SFX")]
+    public AudioClip clickSfx;
+    [Range(0f, 1f)] public float clickVolume = 1f;
+
     void Awake()
     {
         sprite = GetComponent<SpriteRenderer>().sprite;
@@ -31,8 +35,15 @@ public class PickupItems : MonoBehaviour
 
     public virtual void OnMouseDown()
     {
+            
         if (controller.IsDialogueActive()) return;
 
+        if (clickSfx != null)
+        {
+            var cam = Camera.main;
+            Vector3 pos = cam != null ? cam.transform.position : transform.position;
+            AudioSource.PlayClipAtPoint(clickSfx, pos, clickVolume);
+        }
         if (!isConsumable)
         {
             controller.PickUpItem(this);
@@ -51,10 +62,8 @@ public class PickupItems : MonoBehaviour
             }
             
         }
-
         gameObject.SetActive(false);
     }
-
     public virtual void Reset()
     {
         gameObject.SetActive(true);
