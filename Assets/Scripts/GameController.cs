@@ -42,9 +42,14 @@ public class GameController : MonoBehaviour
     private RectTransform meterMarker;
     private RectTransform meterTrack;
 
-    private readonly List<DialogueLine> dialogueLines = new();
+    private List<string> activeDialogue = new();
     private int dialogueIndex = -1;
     private bool dialogueActive = false;
+
+    private string activeSpeakerName;
+    private Sprite activeSpeakerPortrait;
+
+    private bool blockAdvanceThisClick = false;
 
     Transform FindCanvasChild(string name)
     {
@@ -55,7 +60,7 @@ public class GameController : MonoBehaviour
         return null;
     }
 
-    private void Awake()
+    void Awake()
     {
         if (canvas == null)
             canvas = FindFirstObjectByType<Canvas>();
@@ -82,7 +87,7 @@ public class GameController : MonoBehaviour
 
     }
 
-    private void Start()
+    void Start()
     {
         currentMeterValue = initialMeterValue;
         selectedItemImage.enabled = false;
@@ -92,8 +97,16 @@ public class GameController : MonoBehaviour
 
     void Update()
     {
-        if(dialogueActive && Input.GetMouseButtonDown(0))
+        if (!dialogueActive) return;
+
+        if (Input.GetMouseButtonDown(0))
         {
+            if (blockAdvanceThisClick)
+            {
+                blockAdvanceThisClick = false;
+                return;
+            }
+
             AdvanceDialogue();
         }
     }
@@ -158,7 +171,6 @@ public class GameController : MonoBehaviour
     private void UpdateMeterUI()
     {
         if (meterTrack == null || meterMarker == null) return;
-        Debug.Log(currentMeterValue);
         float v = Mathf.Clamp(currentMeterValue, VERY_RACCOON, VERY_HUMAN);
 
         float t = (v - VERY_RACCOON) / (VERY_HUMAN - VERY_RACCOON);
@@ -170,55 +182,41 @@ public class GameController : MonoBehaviour
         meterMarker.anchoredPosition = pos;
     }
 
-    public void ShowText(string text, string speakerName = "", Sprite portrait = null)
+    public void StartDialogue(List<string> lines, string speakerName, Sprite portrait)
     {
-        var lines = new List<DialogueLine>
-        {
-            new DialogueLine { text = text, speakerName = speakerName, portrait = portrait }
-        };
-        StartDialogue(lines);
-    }
+        if(lines.Count == 0) return;
 
-    public void StartDialogue(List<DialogueLine> lines)
-    {
-        dialogueLines.Clear();
-        dialogueLines.AddRange(lines);
+        activeDialogue = lines;
+        activeSpeakerName = speakerName;
+        activeSpeakerPortrait = portrait;
         dialogueIndex = -1;
         dialogueActive = true;
         if (dialoguePanel != null) dialoguePanel.SetActive(true);
+        blockAdvanceThisClick = true;
         AdvanceDialogue();
     }
 
     private void AdvanceDialogue()
     {
         dialogueIndex++;
-
-        if (dialogueIndex >= dialogueLines.Count)
+        Debug.Log(dialogueIndex);
+        if (dialogueIndex >= activeDialogue.Count)
         {
             dialogueActive = false;
             if (dialoguePanel != null) dialoguePanel.SetActive(false);
             return;
         }
 
-        var line = dialogueLines[dialogueIndex];
-
-        if (dialogueText != null) dialogueText.text = line.text ?? "";
+        if (dialogueText != null) 
+            dialogueText.text = activeDialogue[dialogueIndex];
 
         if (dialogueName != null)
-            dialogueName.text = string.IsNullOrEmpty(line.speakerName) ? "" : line.speakerName;
+            dialogueName.text = activeSpeakerName;
 
         if (dialoguePortrait != null)
         {
-            if (line.portrait != null)
-            {
-                dialoguePortrait.sprite = line.portrait;
-                dialoguePortrait.enabled = true;
-            }
-            else
-            {
-                dialoguePortrait.sprite = null;
-                dialoguePortrait.enabled = false;
-            }
+            dialoguePortrait.sprite = activeSpeakerPortrait;
+            dialoguePortrait.enabled = true;
         }
     }
 }

@@ -141,7 +141,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3898082a64dc93b4daa039764be2b2b3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PickupItems
-  Name: Spoon
+  ItemName: Spoon
   Value: 2
 --- !u!1 &109631288
 GameObject:
@@ -1209,7 +1209,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &929580936
 Transform:
   m_ObjectHideFlags: 0
@@ -1681,7 +1681,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 8674777253140435818, guid: 9d28a8608d36dd54c9bc2bfd8607a3fd, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1706276237}
   m_SourcePrefab: {fileID: 100100000, guid: 9d28a8608d36dd54c9bc2bfd8607a3fd, type: 3}
 --- !u!1 &1384820278
 GameObject:
@@ -2137,6 +2140,50 @@ Transform:
   - {fileID: 914043804}
   m_Father: {fileID: 935572248}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1706276233 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8674777253140435818, guid: 9d28a8608d36dd54c9bc2bfd8607a3fd, type: 3}
+  m_PrefabInstance: {fileID: 1334026889}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1706276237
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1706276233}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8b1442b99d8ef49468692bb4ea4cfbf6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Character
+  charName: Raccoony
+  Portrait: {fileID: -420017970089433170, guid: 362c6bf2e16b2d341af8646a8bcd1076, type: 3}
+  interactions:
+  - triggerType: 0
+    triggerRank: 0
+    triggerItem: 
+    dialogue:
+    - Don't poke me!
+    meterValue: 0
+    advanceTier: 0
+    endLevel: 0
+  - triggerType: 0
+    triggerRank: 1
+    triggerItem: 
+    dialogue:
+    - I'm becoming more human!
+    meterValue: 0
+    advanceTier: 0
+    endLevel: 0
+  - triggerType: 1
+    triggerRank: 1
+    triggerItem: Spoon
+    dialogue:
+    - Nice Spoon!
+    meterValue: 0
+    advanceTier: 0
+    endLevel: 0
 --- !u!1 &1774180752
 GameObject:
   m_ObjectHideFlags: 0
@@ -2253,7 +2300,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3898082a64dc93b4daa039764be2b2b3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PickupItems
-  Name: Vase
+  ItemName: 
   Value: 4
 --- !u!1001 &1900143045593924968
 PrefabInstance:

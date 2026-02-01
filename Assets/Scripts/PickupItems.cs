@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class PickupItems : MonoBehaviour
 {
-    public string Name;
+    public string ItemName;
 
     [Range(GameController.VERY_RACCOON, GameController.VERY_HUMAN)]
     public int Value;
