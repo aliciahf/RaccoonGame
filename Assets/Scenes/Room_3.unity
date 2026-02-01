@@ -366,6 +366,10 @@ PrefabInstance:
       value: Character
       objectReference: {fileID: 0}
     - target: {fileID: 5493908739376127585, guid: 5fd8e0b357b19ba40b36eb9cb48d01e7, type: 3}
+      propertyPath: Portrait
+      value: 
+      objectReference: {fileID: -6340521029785660812, guid: 716f3bbb1054a6e4e886e794db0ca647, type: 3}
+    - target: {fileID: 5493908739376127585, guid: 5fd8e0b357b19ba40b36eb9cb48d01e7, type: 3}
       propertyPath: charName
       value: Morty
       objectReference: {fileID: 0}
@@ -1190,6 +1194,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5493908739376127585, guid: 5fd8e0b357b19ba40b36eb9cb48d01e7, type: 3}
+      propertyPath: Portrait
+      value: 
+      objectReference: {fileID: -6734211210704360013, guid: 7f715cb2c4be1a748a1284e38f24ba58, type: 3}
     - target: {fileID: 5493908739376127585, guid: 5fd8e0b357b19ba40b36eb9cb48d01e7, type: 3}
       propertyPath: charName
       value: Raccoony
@@ -2070,6 +2078,10 @@ PrefabInstance:
       value: Character
       objectReference: {fileID: 0}
     - target: {fileID: 5493908739376127585, guid: 5fd8e0b357b19ba40b36eb9cb48d01e7, type: 3}
+      propertyPath: Portrait
+      value: 
+      objectReference: {fileID: 2087537565873498123, guid: df44e3286de06734f9e9ca3c7c8936d7, type: 3}
+    - target: {fileID: 5493908739376127585, guid: 5fd8e0b357b19ba40b36eb9cb48d01e7, type: 3}
       propertyPath: charName
       value: Naso
       objectReference: {fileID: 0}
@@ -2299,6 +2311,10 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Character
       objectReference: {fileID: 0}
+    - target: {fileID: 5493908739376127585, guid: 5fd8e0b357b19ba40b36eb9cb48d01e7, type: 3}
+      propertyPath: Portrait
+      value: 
+      objectReference: {fileID: 4574882061500917240, guid: 40a004d553490744ca04bec5c0956952, type: 3}
     - target: {fileID: 5493908739376127585, guid: 5fd8e0b357b19ba40b36eb9cb48d01e7, type: 3}
       propertyPath: charName
       value: Williams
@@ -3734,7 +3750,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Character
   charName: Raccoony
-  Portrait: {fileID: -420017970089433170, guid: 362c6bf2e16b2d341af8646a8bcd1076, type: 3}
+  Portrait: {fileID: -6734211210704360013, guid: 7f715cb2c4be1a748a1284e38f24ba58, type: 3}
   interactions: []
 --- !u!4 &2067039137 stripped
 Transform:
