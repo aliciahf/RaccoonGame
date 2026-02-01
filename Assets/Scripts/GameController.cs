@@ -99,7 +99,7 @@ public class GameController : MonoBehaviour
         UpdateMeterUI();
         foreach (PickupItems pickup in allPickups)
         {
-            if (pickup.showOnTier > currentTier) pickup.gameObject.SetActive(false);
+            if (pickup.relyOnConnectedItem) pickup.gameObject.SetActive(false);
         }
     }
 
@@ -172,11 +172,10 @@ public class GameController : MonoBehaviour
     public void SetTier(int tier)
     {
         currentTier = Mathf.Clamp(tier, 1, maxTiers);
-        Debug.Log(allPickups.Count());
-        foreach(var pickup in allPickups)
-        {
-           if (pickup.showOnTier >= currentTier) pickup.Reset();
-        }
+        //foreach(var pickup in allPickups)
+        //{
+        //   if (pickup.showOnTier >= currentTier) pickup.Reset();
+        //}
     }
 
     public bool IsDialogueActive() => dialogueActive;
