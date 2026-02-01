@@ -677,7 +677,6 @@ GameObject:
   - component: {fileID: 5608715301360848262}
   - component: {fileID: 18311593522737965}
   - component: {fileID: 7484349753811874930}
-  - component: {fileID: 758426658712066977}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -771,33 +770,6 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
---- !u!114 &758426658712066977
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7784890672176366020}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8b1442b99d8ef49468692bb4ea4cfbf6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Character
-  charName: TrashCan
-  Portrait: {fileID: 21300000, guid: eaa806ac5fde0f149b93a08636e8db12, type: 3}
-  interactions:
-  - triggerType: 0
-    triggerRank: 0
-    triggerItem: 
-    dialogue:
-    - Trash
-    meterValue: 0
-    advanceTier: 0
-    endLevel: 0
-    newIcon: {fileID: 0}
-    newRaccoonIcon: {fileID: 0}
-    destroyCharacter: 0
-    spawnItems: []
 --- !u!1 &8242197466999720728
 GameObject:
   m_ObjectHideFlags: 0
