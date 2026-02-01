@@ -17,7 +17,7 @@ public class HoverAnimation : MonoBehaviour
     /*private void OnMouseEnter()
     {
         transform.localScale += new Vector3(scaleFactor, scaleFactor, 1);
-        mySprite.material.color = Color.red;
+        mySprite.material.color = new Color32(255, 235, 200, 255);
     }*/
 
     private void OnMouseOver()
