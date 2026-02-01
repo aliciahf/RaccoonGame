@@ -7,6 +7,9 @@ public class PickupItems : MonoBehaviour
     [Range(GameController.VERY_RACCOON, GameController.VERY_HUMAN)]
     public int Value;
 
+    [Range(1, 5)]
+    public int showOnTier = 1;
+
     private Sprite sprite;
     private GameController controller;
 

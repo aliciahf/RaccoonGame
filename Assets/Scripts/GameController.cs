@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using TMPro;
 using UnityEditor.IMGUI.Controls;
 using UnityEngine;
@@ -51,6 +52,9 @@ public class GameController : MonoBehaviour
 
     private bool blockAdvanceThisClick = false;
 
+    private PickupItems[] allPickups;
+
+
     Transform FindCanvasChild(string name)
     {
         foreach(var trans in canvas.GetComponentsInChildren<Transform>(true))
@@ -84,7 +88,7 @@ public class GameController : MonoBehaviour
         if (dialoguePanel == null) Debug.LogWarning("No dialogue panel");
         if (selectedItemImage == null) Debug.LogWarning("No selected item");
         if (meterMarker == null) Debug.LogWarning("No Meter Marker");
-
+        allPickups = FindObjectsByType<PickupItems>(FindObjectsSortMode.None);
     }
 
     void Start()
@@ -93,6 +97,11 @@ public class GameController : MonoBehaviour
         selectedItemImage.enabled = false;
         if(dialoguePanel != null) dialoguePanel.SetActive(false);
         UpdateMeterUI();
+        foreach (PickupItems pickup in allPickups)
+        {
+            Debug.Log(pickup.showOnTier);
+            if (pickup.showOnTier > currentTier) pickup.gameObject.SetActive(false);
+        }
     }
 
     void Update()
@@ -164,6 +173,11 @@ public class GameController : MonoBehaviour
     public void SetTier(int tier)
     {
         currentTier = Mathf.Clamp(tier, 1, maxTiers);
+        Debug.Log(allPickups.Count());
+        foreach(var pickup in allPickups)
+        {
+           if (pickup.showOnTier >= currentTier) pickup.Reset();
+        }
     }
 
     public bool IsDialogueActive() => dialogueActive;
@@ -199,7 +213,7 @@ public class GameController : MonoBehaviour
     private void AdvanceDialogue()
     {
         dialogueIndex++;
-        Debug.Log(dialogueIndex);
+
         if (dialogueIndex >= activeDialogue.Count)
         {
             dialogueActive = false;
