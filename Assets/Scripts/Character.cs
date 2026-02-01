@@ -69,6 +69,8 @@ public class Character : MonoBehaviour
 
         controller.AddToMeterValue(inter.meterValue);
         if (inter.advanceTier) controller.SetTier(controller.GetTier() + 1);
+        if(inter.destroyCharacter) this.gameObject.SetActive(false);
+        if (inter.newIcon) this.GetComponent<SpriteRenderer>().sprite = inter.newIcon;
 
         if (inter.endLevel)
         {
