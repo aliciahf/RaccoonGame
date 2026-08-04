@@ -2,8 +2,8 @@ using UnityEngine;
 
 public class HoverAnimation : MonoBehaviour
 {
-    float scaleFactor = 0.05f;
-    float scaleRate = 0.003f;
+    float scaleFactor = 0.15f;
+    float scaleRate = 0.005f;
     Vector3 initialSize;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
