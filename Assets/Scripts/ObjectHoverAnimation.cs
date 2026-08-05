@@ -1,11 +1,11 @@
 using UnityEngine;
 
-public class HoverAnimation : MonoBehaviour
+public class ObjectHoverAnimation : MonoBehaviour
 {
-    float scaleFactor = 0.15f;
+    float scaleFactor = 0.1f;
     float scaleRate = 0.005f;
     Vector3 initialSize;
-
+    
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {

@@ -184,7 +184,7 @@ public class GameController : MonoBehaviour
         if (currentItem is CombinableItem)
         {
             var combinable = (CombinableItem)currentItem;
-            foreach (PickupItems comb in combinable.combinors)
+            foreach (PickupItems comb in combinable.combiners)
             {
                 AddToMeterValue(comb.Value * -1);
             }

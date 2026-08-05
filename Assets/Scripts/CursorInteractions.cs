@@ -2,18 +2,27 @@ using UnityEngine;
 
 public class CursorInteractions : MonoBehaviour
 {
+
+    public Sprite CursorDefault;
+    public Sprite CursorHover;
+    public Sprite CursorActive;
+
+    void Start() {
+        
+    }    
+
     void OnMouseEnter() 
     { 
-        CursorController.Instance.SetHover(); 
+        
     }
 
     void OnMouseExit() 
     { 
-        CursorController.Instance.SetDefault(); 
+
     }
 
     void onMouseDown()
     {
-        CursorController.Instance.SetGrabbing(); 
+
     }
 }

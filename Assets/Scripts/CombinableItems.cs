@@ -5,13 +5,13 @@ using UnityEngine.InputSystem.XR;
 
 public class CombinableItem : PickupItems
 {
-    public List<PickupItems> combinors;
+    public List<PickupItems> combiners;
     public List<CombinableItem> branches;
 
     public override void OnMouseDown()
     {
         base.OnMouseDown();
-        foreach (PickupItems pickup in combinors)
+        foreach (PickupItems pickup in combiners)
         {
             if (pickup != null) pickup.gameObject.SetActive(false);
         }
@@ -23,7 +23,7 @@ public class CombinableItem : PickupItems
 
     public override void Reset()
     {
-        foreach (PickupItems pickup in combinors)
+        foreach (PickupItems pickup in combiners)
         {
             if (pickup != null && pickup is not CombinableItem) pickup.gameObject.SetActive(true);
         }
